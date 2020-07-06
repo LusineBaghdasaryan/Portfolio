@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc_button {
+    border-radius: 10px;
+    background-color: #56A79A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    user-select: none;
+}
+.screen{
+    color: black;
+}
+
+.calc_button:hover{
+    opacity: 80%;
+}
+.calc_button:active{
+    opacity: 50%;
+    cursor: pointer;
+}
+.grid-container {
+    width: 350px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-template-areas: "screen screen screen screen" "ac left_arrow divide mult" "num_7 num_8 num_9 minus" "num_4 num_5 num_6 plus" "num_1 num_2 num_3 plus" "zero zero dot equal";
+}
+
+.screen {
+    grid-area: screen;
+    background-color: white;
+}
+
+.ac { grid-area: ac; }
+
+.left_arrow { grid-area: left_arrow; }
+
+.divide { grid-area: divide; }
+
+.mult { grid-area: mult; }
+
+.num_7 { grid-area: num_7; }
+
+.num_8 { grid-area: num_8; }
+
+.num_9 { grid-area: num_9; }
+
+.plus { grid-area: plus; }
+
+.num_4 { grid-area: num_4; }
+
+.num_5 { grid-area: num_5; }
+
+.num_6 { grid-area: num_6; }
+
+.num_1 { grid-area: num_1; }
+
+.num_2 { grid-area: num_2; }
+
+.num_3 { grid-area: num_3; }
+
+.zero { grid-area: zero; }
+
+.dot { grid-area: dot; }
+
+.equal { grid-area: equal; }
+
+

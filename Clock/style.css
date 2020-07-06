@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(82, 80, 80);
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 160px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hours_block, .minutes_block, .seconds_block {
+    width: 260px;
+}
+
+.hours_p, .minutes_p, .seconds_p {
+    color: #ED674F;
+    text-align: center;
+}
+
+.points_p {
+    color: #D1D1CF;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+

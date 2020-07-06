@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    background-color: #BCFE00;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toDoList {
+    width: 500px;
+}
+
+.toDoListHeaderBlock {
+    background-color: #ADD8E6;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.toDoListAddBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toDoListAddBlock > input {
+    background-color: #D3D3D3;
+    padding: 20px 10px;
+    width: 90%;
+    color: #7584A6;
+    font-size: 15px;
+    border: none;
+}
+
+.toDoListAddBlock > input:focus {
+    opacity: 90%;
+    outline: none;
+}
+
+.toDoListAddBlock > button {
+    width: 10%;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+
+.toDoListAddBlock > button:focus {
+    opacity: 80%;
+    outline: none;
+}
+
+.toDoListItem {
+    width: 100%;
+    border-bottom: 1px solid #D3D3D3;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.toDoListItem > button {
+    width: 12%;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+
+.toDoListItem > button:focus {
+    opacity: 80%;
+    outline: none;
+}
+
+.toDoListItem > h1 {
+    background-color: white;
+    padding: 15px 10px;
+    width: 88%;
+    font-size: 20px;
+}
+
