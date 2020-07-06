@@ -1,0 +1,1159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.blackHeader {
+    background-color: black;
+
+}
+
+.blackHeader div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blackHeader p {
+    color: #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.whiteHeader {
+    background-color: white;
+}
+
+.whiteHeader div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.selectForm {
+    padding: 10px;
+}
+
+.selectForm:hover {
+    cursor: pointer;
+
+}
+
+.searchInput {
+    padding: 10px 250px 10px 10px;
+
+}
+
+.searchButton {
+    padding: 10px 15px;
+}
+
+.searchButton:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+
+}
+
+.headerNavDiv ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNavDiv ul li {
+    padding: 20px;
+}
+
+.headerNavDiv ul li:hover {
+    cursor: pointer;
+
+}
+
+.headerNavDiv ul a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+
+#greenItem {
+    background-color: green;
+}
+
+#greenItem a {
+    color: white;
+}
+
+#greenMenuIcon {
+    background-color: green;
+    transition: 1s;
+
+}
+
+#greenMenuIcon i {
+    color: white;
+}
+
+#greenMenuIcon:hover {
+    background-color: orange;
+
+}
+
+#blogItem {
+    flex-grow: 2;
+}
+
+.section1BgDiv {
+    padding-top: 250px;
+    padding-bottom: 300px;
+    width: 100%;
+    background-image: url("../images/slider-img3.jpg");
+    background-size: cover;
+
+}
+
+.fresh, .vegetables {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+
+}
+
+.section1TextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shopNow {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: orange;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.shopNow:hover {
+    background-color: green;
+
+}
+
+.section2Div1 div {
+    padding: 10px 50px;
+    color: white;
+}
+
+.section2Div1 div:hover {
+    cursor: pointer;
+}
+
+.section2Div1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.section2Div1 div:first-of-type {
+    background: #16defb;
+}
+
+.section2Div1 div:nth-child(2) {
+    background: #fa6b6b;;
+}
+
+.section2Div1 div:nth-child(3) {
+    background: #407ac5;
+}
+
+.section2Div1 div:last-child {
+    background: #ffa200;
+}
+
+.section2Div2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2Div2 .imgDiv {
+    width: 350px;
+    height: 200px;
+    position: relative;
+}
+
+.section2Div2 .imgDiv img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.section2Div2 .imgDiv:before {
+    border: 3px solid transparent;
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.section2Div2 .imgDiv:hover:before {
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    border-color: #6dac23;
+}
+
+.imgDiv h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: white;
+}
+
+.section3 {
+    background: white;
+    margin-top: 50px;
+
+}
+
+.section3 h1 {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.section3Div1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section3Div1 div {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section3Div1 .firstImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section3Div1 .hoverImg {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 1s;
+}
+
+.section3Div1 div:hover {
+    cursor: pointer;
+}
+
+.section3Div1 div:hover .hoverImg {
+    opacity: 1;
+    transform: translateY(100%);
+
+
+}
+
+.addCart {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    text-transform: uppercase;
+    opacity: 0;
+    left: -100%;
+    transition: 1s;
+}
+
+.addCart:hover {
+    background-color: orange;
+
+}
+
+.section3Div1 div:hover .addCart {
+    opacity: 1;
+    transform: translateX(100%);
+
+}
+
+
+.section4 {
+    background: white;
+    margin-top: 30px;
+}
+
+.section4 h1 {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.section4Div1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section4Div1 .blogDiv {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section4Div1 .blogDiv img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.section4Div1 .blogDiv:hover {
+    cursor: pointer;
+}
+
+.opacityDiv1 {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.6;
+    transition: .5s;
+
+}
+
+.opacityDiv2 {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    opacity: 0.6;
+    transition: .5s;
+}
+
+.section4Div1 .blogDiv:hover .opacityDiv1 {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.section4Div1 .blogDiv:hover .opacityDiv2 {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.section5 {
+    margin-top: 50px;
+}
+
+.section5Div1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section5Div1InnerDiv1, .section5Div1InnerDiv2 {
+    height: 345px;
+    width: 49%;
+}
+
+.section5Div1InnerDiv1 div {
+    height: 45%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section5Div1InnerDiv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section5Div1InnerDiv1 div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.section5Div1InnerDiv1 .sub2ImgDiv:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.section5Div1InnerDiv1 .sub3ImgDiv:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.section5Div1InnerDiv2 {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.section5Div1InnerDiv2 img {
+    transition: .5s;
+
+}
+
+.section5Div1InnerDiv2:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+
+
+}
+
+.section5Div1InnerDiv2 div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sub2ImgDiv {
+    position: relative;
+}
+
+.sub2ImgDiv .seasonSale {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: yellowgreen;
+    padding: 10px;
+
+}
+
+.sub2ImgDiv .seasonSale div {
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+
+}
+
+.sub2ImgDiv .seasonSale h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 20px 30px;
+}
+
+.sub2ImgDiv .seasonSale .shopNow {
+    position: absolute;
+    bottom: 15px;
+    left: 40px;
+
+}
+
+.sub3ImgDiv {
+    position: relative;
+}
+
+.sub3ImgDiv .bestQuality {
+    height: 70%;
+    width: 60%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.sub3ImgDiv .bestQuality div {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.sub3ImgDiv .bestQuality h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.sub3ImgDiv .bestQuality p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 60%;
+}
+
+.freshFruit {
+    height: 30%;
+    width: 60%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background-color: orange;
+    padding: 10px;
+}
+
+.freshFruit div {
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.freshFruit h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+
+.freshFruit p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.section6 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.section6 h1 {
+    text-transform: uppercase;
+    margin: 20px;
+    border-bottom: 2px solid yellowgreen;
+    padding-bottom: 5px;
+
+}
+
+.section6Div {
+    width: 32%;
+    background-color: white;
+}
+
+.section6ImgDiv {
+    height: 130px;
+    width: 130px;
+    border: 1px solid lightgray;
+    margin: 20px;
+}
+
+.section6ImgDiv:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+.section6ImgDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.section6DivInnerDiv {
+    position: relative;
+}
+
+.section6TextDiv {
+    width: calc(100% - 170px);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+}
+
+.section6TextDiv p {
+    font-size: 18px;
+}
+
+.price {
+    color: yellowgreen;
+    font-size: 22px;
+    margin-top: 23px;
+}
+
+.section6TextDiv i {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 23px;
+    color: gray;
+    transition: .5s;
+}
+
+.section6TextDiv i:hover {
+    background-color: #6dac23;
+    cursor: pointer;
+
+}
+
+.greenFooter {
+    background-color: green;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.greenFooterInnerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signUp {
+
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+
+footer input {
+    padding: 15px 150px 15px 10px;
+}
+
+footer input::placeholder {
+    text-transform: capitalize;
+
+}
+
+.subscribeButton {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #ffa200;
+    padding: 13px 40px 17px;
+    transition: .5s;
+}
+
+.subscribeButton:hover {
+    background-color: red;
+
+}
+
+.socialIconsDiv a:hover {
+    opacity: .7;
+    transition: .8s;
+}
+
+.socialIconsDiv a:first-child {
+    background-color: #3C5B9B;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+
+}
+
+.socialIconsDiv a:nth-child(2) {
+    background: #E33729;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.socialIconsDiv a:nth-child(3) {
+    background: #359BED;
+    color: white;
+    padding: 10px 15px;
+    font-size: 25px;
+}
+
+.whiteFooter1 {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid darkslategray;
+}
+
+.whiteFooter1InnerDiv {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.whiteFooter1InnerDiv i {
+    margin-right: 10px;
+
+}
+
+.whiteFooter1InnerDiv p {
+    color: darkslategray;
+}
+
+.whiteFooter2 {
+    background-color: white;
+    padding: 10px;
+
+}
+
+.whiteFooter2InnerDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.whiteFooter2InnerDiv p {
+    color: darkslategray;
+    text-transform: capitalize;
+
+}
+
+@media screen and (max-width: 1077px) {
+
+    .section6TextDiv p {
+        font-size: 16px;
+
+    }
+
+    .price {
+        font-size: 20px;
+        margin-top: 13px;
+    }
+
+    .section6TextDiv i {
+        margin-top: 13px;
+
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .headerNavDiv ul li {
+        padding: 18px;
+    }
+
+
+    .headerNavDiv ul a {
+        font-size: 15px;
+
+    }
+
+
+    .sub2ImgDiv .seasonSale h1 {
+        color: white;
+        font-size: 20px;
+        margin: 20px 30px;
+    }
+
+    .sub2ImgDiv .seasonSale .shopNow {
+        position: absolute;
+        bottom: 25px;
+        padding: 10px 20px;
+
+    }
+
+
+    .sub3ImgDiv .bestQuality h1 {
+        font-size: 20px;
+    }
+
+    .sub3ImgDiv .bestQuality p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .freshFruit h1 {
+        font-size: 20px;
+    }
+
+    .freshFruit p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .section6 h1 {
+        text-transform: uppercase;
+        margin: 20px;
+        border-bottom: 2px solid yellowgreen;
+        padding-bottom: 5px;
+
+    }
+
+
+    .section6TextDiv i {
+
+        padding: 5px;
+
+    }
+
+
+    .signUp {
+        font-size: 15px;
+    }
+
+
+    footer input {
+        padding: 10px 100px 10px 10px;
+    }
+
+
+    .subscribeButton {
+        padding: 8px 30px 12px;
+
+    }
+
+
+    .socialIconsDiv a:first-child {
+        padding: 5px 14px;
+
+    }
+
+    .socialIconsDiv a:nth-child(2) {
+
+        padding: 5px;
+    }
+
+    .socialIconsDiv a:nth-child(3) {
+        padding: 5px 8px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 830px) {
+
+    .searchInput {
+        padding: 10px 60px 10px 10px;
+
+    }
+
+    .whiteHeader .refresh_logo {
+        height: 35px;
+    }
+
+    .selectForm {
+        display: none;
+    }
+
+
+    .headerNavDiv ul li {
+        padding: 10px;
+    }
+
+
+    .headerNavDiv ul a {
+        font-size: 12px;
+    }
+
+    #greenItem {
+        display: none;
+    }
+
+    #blogItem {
+        flex-grow: 0;
+    }
+
+
+    .fresh, .vegetables {
+        font-size: 30px;
+
+    }
+
+    .section2Div1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section2Div1 div {
+        text-align: center;
+    }
+
+    .section2Div1 {
+        display: block;
+
+    }
+
+    .section2Div2 {
+        display: block;
+    }
+
+    .section2Div2 .imgDiv {
+        width: 100%;
+    }
+
+    .section3 {
+        margin-top: 20px;
+
+    }
+
+    .section3 h1 {
+        font-size: 22px;
+    }
+
+    .section3Div1 {
+        flex-wrap: wrap;
+    }
+
+    .section3Div1 div {
+        width: 200px;
+    }
+
+    .section4 {
+        margin-top: 20px;
+    }
+
+    .section4 h1 {
+        font-size: 22px;
+    }
+
+    .section4Div1 {
+        display: block;
+
+    }
+
+    .section4Div1 .blogDiv {
+        width: 100%;
+    }
+
+    .section5 {
+        margin-top: 30px;
+    }
+
+    .section5Div1 {
+        display: block;
+
+    }
+
+    .section5Div1InnerDiv1, .section5Div1InnerDiv2 {
+        width: 100%;
+    }
+
+
+    .section5Div1InnerDiv2 {
+        margin-top: 35px;
+
+    }
+
+    .freshFruit h1 {
+        font-size: 20px;
+    }
+
+    .freshFruit p {
+        font-size: 15px;
+
+    }
+
+    .section6 {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .section6 h1 {
+        font-size: 22px;
+
+    }
+
+    .section6Div {
+        width: 100%;
+
+    }
+
+    .section6TextDiv p {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 22px;
+        margin-top: 23px;
+    }
+
+    .section6TextDiv i {
+        padding: 10px;
+        margin-top: 23px;
+    }
+
+
+    .greenFooterInnerDiv {
+        display: block;
+
+    }
+
+    footer input {
+        padding: 10px 80px 10px 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .subscribeButton {
+        padding: 8px 20px 12px;
+
+    }
+
+
+    .whiteFooter1InnerDiv {
+        display: block;
+
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .blackHeader div {
+        display: block;
+    }
+
+    .blackHeader p {
+        font-size: 14px;
+    }
+
+    .whiteHeader div {
+        display: block;
+    }
+
+    .searchInput {
+        padding: 10px 40px 10px 10px;
+        margin-top: 10px;
+
+    }
+
+    .headerNavDiv ul {
+        justify-content: flex-start;
+    }
+
+    .headerNavDiv ul li {
+        display: none;
+        padding: 15px;
+
+    }
+
+
+    #greenItem {
+        display: block;
+
+    }
+
+    #greenMenuIcon {
+        display: block;
+        margin-left: 0;
+
+
+    }
+
+    .section1BgDiv {
+        padding-top: 100px;
+        padding-bottom: 150px;
+
+    }
+
+    .section3Div1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .freshFruit h1 {
+        font-size: 18px;
+    }
+
+    .freshFruit p {
+        font-size: 13px;
+
+    }
+
+    .sub2ImgDiv .seasonSale h1 {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .sub2ImgDiv .seasonSale .shopNow {
+        padding: 5px 10px;
+
+    }
+
+
+    .sub3ImgDiv .bestQuality h1 {
+        font-size: 18px;
+    }
+
+    .sub3ImgDiv .bestQuality p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .freshFruit h1 {
+        font-size: 20px;
+    }
+
+    .freshFruit p {
+        font-size: 15px;
+    }
+
+
+    .section6TextDiv p {
+        font-size: 15px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .section6TextDiv i {
+        padding: 5px;
+    }
+
+    footer input {
+        padding: 10px 5px 10px 10px;
+
+    }
+
+    .socialIconsDiv {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .whiteFooter2InnerDiv {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

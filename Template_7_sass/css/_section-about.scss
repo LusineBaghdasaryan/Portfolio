@@ -1,0 +1,39 @@
+.sectionAbout {
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/hero_1.jpg");
+    background-size: cover;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+
+    }
+  }
+
+  h1:nth-child(1) {
+    position: relative;
+    color: $color-white;
+    font-size: $size-main*3;
+    font-family: $font-main;
+    font-weight: lighter;
+
+  }
+
+  h1:nth-child(2) {
+    color: $color-white;
+    font-family: $font-second;
+    font-size: $size-main*10;
+    position: relative;
+    text-transform: uppercase;
+
+  }
+}

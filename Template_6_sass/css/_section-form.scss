@@ -1,0 +1,42 @@
+.section-form-container{
+  max-width: $size-width*12+px;
+  margin: auto;
+  padding: $size-zero $size-main*2;
+
+}
+.section-form{
+  padding: $size-main*3 $size-zero;
+  background-color: darken($color-gray,10%);
+  form{
+    justify-content:space-around;
+  }
+  input{
+    border: none;
+    padding: $size-main*1.5 $size-main;
+    width: percentage(1/6*5);
+    height: $size-main*2;
+    font-family: $font-second;
+    font-style: italic;
+    font-weight: bold;
+    outline: none;
+    background-color: lighten($color-gray,8%);
+    transition: background-color 0.6s ease;
+    color: $color-dark;
+   &:focus{
+    background-color: lighten($color-gray,40%);
+  }
+   &::placeholder{
+     color: darken($color-gray,12%);
+     opacity: 0.7;
+   }
+  }
+  button{
+    font-size: $size-main*1.6;
+    margin-top: $size-zero;
+    width: 100%;
+    padding: $size-main*1.4 $size-main*4;
+
+
+  }
+
+}

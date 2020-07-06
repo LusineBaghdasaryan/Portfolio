@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 980px;
+    width: 100%;
+    margin: auto;
+}
+
+main {
+    background-color: #F3E1E1;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+/*section1*/
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/wedding_couple.jpg");
+    filter: grayscale(50%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1TextDiv h1, .section1TextDiv p {
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section1TextDiv h1 {
+    font-size: 64px;
+}
+
+.section1TextDiv p {
+    font-size: 30px;
+}
+
+.section1TextDiv p:nth-of-type(2) {
+    font-weight: bolder;
+}
+
+
+/*section2*/
+
+.section2 > h1 {
+    color: #757575;
+    margin: 70px 0 50px 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.section2ImgDiv {
+    background-image: url("img/wedding_couple2.jpg");
+    filter: grayscale(60%);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.section2 > p {
+    color: #000;
+    line-height: 2;
+    font-size: 15px;
+    margin: 50px 0;
+}
+
+.section2buttonDiv {
+    display: flex;
+    justify-content: center;
+
+}
+
+.section2buttonDiv button {
+    background-color: #000;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.section2buttonDiv button a {
+    line-height: 2;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.section2buttonDiv button:hover {
+    background-color: #ccc;
+}
+
+.section2buttonDiv button:hover a {
+    color: #000;
+}
+
+/*section3*/
+
+.section3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/flowers.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3TextDiv h1, .section3TextDiv p {
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.section3TextDiv h1 {
+    font-size: 64px;
+}
+
+.section3TextDiv p {
+    font-size: 30px;
+}
+
+/*section4*/
+
+.section4 > h1 {
+    color: #757575;
+    text-transform: uppercase;
+    margin: 70px 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.section4ImgDiv {
+    background-image: url("img/wedding_location.jpg");
+    filter: grayscale(60%);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.section4TextDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.section4TextDiv h1, .section4TextDiv p {
+    color: #000;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section4TextDiv h1 {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.section4TextDiv p {
+    font-size: 15px;
+    line-height: 2;
+}
+
+/*section5*/
+.section5 {
+    background-color: #ffdddd;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5 > h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section5 > p {
+    font-size: 18px;
+    line-height: 2;
+    color: #000;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+
+.section5 > button {
+    background-color: #f44336;
+    padding: 8px 60px;
+    border-radius: 4px;
+    opacity: 0.6;
+    border: none;
+    cursor: pointer;
+}
+
+.section5 > button a {
+    line-height: 2;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.section5 > button:hover {
+    background-color: #ccc;
+}
+
+.section5 > button:hover a {
+    color: #000;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    padding: 30px;
+}
+
+footer > p {
+    color: #fff;
+    font-size: 15px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+/*nav*/
+.navMenu {
+    background-color: #fff;
+    opacity: 0.75;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.navMenu ul li {
+    list-style: none;
+    padding: 8px 56px;
+    width: 15%;
+    text-align: center;
+}
+
+.navMenu ul li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.navMenu ul li:last-of-type:hover {
+    background-color: #000;
+
+}
+
+.navMenu ul li:last-of-type:hover a {
+    color: #fff;
+}
+
+.navMenu ul a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    white-space: nowrap;
+
+
+}
+
+.navMenu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*media*/
+@media only screen and (max-width: 983px) {
+    .section2 {
+        max-width: 680px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .section4 {
+        max-width: 680px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section1TextDiv h1 {
+        font-size: 64px;
+    }
+
+    .section1TextDiv p {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .section2 {
+        max-width: 580px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .section2ImgDiv {
+        background-position: center;
+    }
+
+    .section4 {
+        max-width: 580px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .section4ImgDiv {
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .section2 {
+        max-width: 430px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .section2ImgDiv {
+        height: 60vh;
+    }
+
+    .section4 {
+        max-width: 430px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .section4ImgDiv {
+        height: 60vh;
+    }
+
+    .section4TextDiv {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .section5 > h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .section5 > p {
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+}
+
+@media only screen and (max-width: 455px) {
+    .section1TextDiv h1 {
+        font-size: 48px;
+    }
+
+    .section1TextDiv p {
+        font-size: 28px;
+    }
+
+    .section2 {
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .section2ImgDiv {
+        height: 50vh;
+    }
+
+    .section4 {
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .section4ImgDiv {
+        height: 50vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+

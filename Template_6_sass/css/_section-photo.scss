@@ -1,0 +1,60 @@
+.section-photo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.photo-item{
+  margin: 10px;
+  width: calc((100% - 60px)/3);
+  min-height: $size-width/4+vh;
+  background-size: cover;
+  background-position: $position;
+  font-size: $size-main*3;
+  color: lighten($color-dark,100%);
+  font-family: $font-main;
+  cursor: pointer;
+  align-items: $position;
+  justify-content: $position;
+  position: relative;
+  transition: all 0.75s ease;
+  span{
+    position: relative;
+    z-index: 1;
+  }
+  &:hover{
+    color: darken($color-blue,0.2);
+    &::before{
+      opacity: 0.8;
+    }
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: $size-zero;
+    bottom: $size-zero;
+    left: $size-zero;
+    right: $size-zero;
+    opacity: 0.3;
+    background-color: $color-gray;
+    transition: all 1.25s ease;
+  }
+  &:nth-child(1){
+    flex-basis:50%;
+  }
+  &:nth-child(2){
+    flex-grow:1;
+  }
+  &:nth-child(3){
+    flex-grow:1;
+  }
+  &:nth-child(4){
+    flex-basis:50%;
+  }
+  &:nth-child(5){
+    flex-basis:100%;
+  }
+
+
+}
+

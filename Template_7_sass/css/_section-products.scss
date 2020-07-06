@@ -1,0 +1,85 @@
+.sectionProducts {
+  margin-top: $size-main*15;
+
+  .sectionProductsDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $size-main*2;
+
+
+    h1 {
+      font-family: $size-main;
+      text-transform: uppercase;
+      font-size: $size-main*3;
+      font-weight: lighter;
+      margin-bottom: $size-main;
+    }
+
+    p {
+      font-family: $font-second;
+      font-size: $size-main*1.5;
+      margin-bottom: $size-main;
+    }
+
+    a {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: $color-purple;
+    }
+
+  }
+
+  .sectionProductsDiv2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+
+    > div {
+      background-color: lighten($color-darkgray, 40%);
+      margin-right: $size-main*2;
+      min-width: $size-main*33;
+      min-height: $size-main*33;
+      width: $size-main*33;
+      height: $size-main*33;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding-bottom: $size-main*3;
+
+      .sectionProductsDiv2TextDiv {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        margin-bottom: $size-main*2;
+
+        h1 {
+          text-transform: capitalize;
+          font-size: $size-main*1.8;
+          font-family: $font-second;
+
+        }
+
+        p {
+          font-size: $size-main*1.6;
+          font-family: $font-second;
+          margin-top: $size-main;
+
+
+        }
+      }
+
+      .sectionProductsDiv2ImgDiv {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 62px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

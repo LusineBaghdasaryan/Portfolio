@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d8dbdd; }
+  header .headerMenuIcon {
+    display: none; }
+  header .logoDiv {
+    display: flex;
+    justify-content: center; }
+  header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; }
+    header nav li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 30px; }
+      header nav li a {
+        text-decoration: none;
+        color: #6c757d;
+        font-family: Cinzel;
+        text-transform: uppercase; }
+        header nav li a:hover {
+          color: #930077; }
+
+.sectionAbout div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/hero_1.jpg");
+  background-size: cover;
+  position: relative; }
+  .sectionAbout div:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+.sectionAbout h1:nth-child(1) {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-family: Cinzel;
+  font-weight: lighter; }
+.sectionAbout h1:nth-child(2) {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 100px;
+  position: relative;
+  text-transform: uppercase; }
+
+.sectionProducts {
+  margin-top: 150px; }
+  .sectionProducts .sectionProductsDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; }
+    .sectionProducts .sectionProductsDiv1 h1 {
+      font-family: 10px;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: lighter;
+      margin-bottom: 10px; }
+    .sectionProducts .sectionProductsDiv1 p {
+      font-family: Montserrat;
+      font-size: 15px;
+      margin-bottom: 10px; }
+    .sectionProducts .sectionProductsDiv1 a {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #930077; }
+  .sectionProducts .sectionProductsDiv2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px; }
+    .sectionProducts .sectionProductsDiv2 > div {
+      background-color: #d8dbdd;
+      margin-right: 20px;
+      min-width: 330px;
+      min-height: 330px;
+      width: 330px;
+      height: 330px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 30px; }
+      .sectionProducts .sectionProductsDiv2 > div .sectionProductsDiv2TextDiv {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        margin-bottom: 20px; }
+        .sectionProducts .sectionProductsDiv2 > div .sectionProductsDiv2TextDiv h1 {
+          text-transform: capitalize;
+          font-size: 18px;
+          font-family: Montserrat; }
+        .sectionProducts .sectionProductsDiv2 > div .sectionProductsDiv2TextDiv p {
+          font-size: 16px;
+          font-family: Montserrat;
+          margin-top: 10px; }
+      .sectionProducts .sectionProductsDiv2 > div .sectionProductsDiv2ImgDiv {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 62px; }
+        .sectionProducts .sectionProductsDiv2 > div .sectionProductsDiv2ImgDiv img {
+          width: 100%;
+          height: 100%; }
+
+.sectionWelcome {
+  margin-top: 150px;
+  background-color: #d8dbdd; }
+  .sectionWelcome .sectionWelcomeDiv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/hero_2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    position: relative; }
+    .sectionWelcome .sectionWelcomeDiv1:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #222;
+      opacity: 0.3; }
+    .sectionWelcome .sectionWelcomeDiv1 h1:nth-child(1) {
+      position: relative;
+      color: #fff;
+      font-size: 30px;
+      font-family: Cinzel;
+      font-weight: lighter; }
+    .sectionWelcome .sectionWelcomeDiv1 h1:nth-child(2) {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 100px;
+      position: relative;
+      text-transform: uppercase; }
+      .sectionWelcome .sectionWelcomeDiv1 h1:nth-child(2) span {
+        display: block;
+        text-align: center; }
+  .sectionWelcome .sectionWelcomeDiv2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between; }
+    .sectionWelcome .sectionWelcomeDiv2 div {
+      margin-right: 20px;
+      text-align: center; }
+      .sectionWelcome .sectionWelcomeDiv2 div img {
+        width: 80px;
+        border: 4px solid #930077;
+        border-radius: 50%; }
+      .sectionWelcome .sectionWelcomeDiv2 div p {
+        color: #6c757d;
+        font-size: 20px;
+        font-family: Cinzel;
+        font-weight: lighter;
+        margin-top: 50px; }
+      .sectionWelcome .sectionWelcomeDiv2 div h1 {
+        color: #930077;
+        font-size: 18px;
+        font-family: Cinzel;
+        font-weight: lighter;
+        margin-top: 10px; }
+
+.sectionBlog {
+  padding-top: 150px;
+  background-color: #d8dbdd;
+  border-bottom: 1px solid #6c757d;
+  padding-bottom: 150px; }
+  .sectionBlog .sectionBlogDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; }
+    .sectionBlog .sectionBlogDiv1 h1 {
+      font-family: 10px;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: lighter;
+      margin-bottom: 10px; }
+    .sectionBlog .sectionBlogDiv1 p {
+      font-family: Montserrat;
+      font-size: 15px;
+      margin-bottom: 10px; }
+    .sectionBlog .sectionBlogDiv1 a {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #930077; }
+  .sectionBlog .sectionBlogDiv2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between; }
+    .sectionBlog .sectionBlogDiv2 > div {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .sectionBlog .sectionBlogDiv2 > div .sectionBlogDiv2ImgDiv {
+        height: 200px;
+        width: 300px;
+        margin-bottom: auto;
+        align-self: center; }
+        .sectionBlog .sectionBlogDiv2 > div .sectionBlogDiv2ImgDiv img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+      .sectionBlog .sectionBlogDiv2 > div h1 {
+        font-size: 20px;
+        font-family: Cinzel;
+        font-weight: lighter;
+        margin-top: 50px; }
+      .sectionBlog .sectionBlogDiv2 > div p {
+        color: #6c757d;
+        font-size: 17px;
+        font-family: Montserrat;
+        font-weight: lighter;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .sectionBlog .sectionBlogDiv2 > div a {
+        text-decoration: none;
+        color: #930077; }
+
+footer {
+  padding: 50px;
+  text-align: center; }
+  footer .footerIconsDiv a {
+    text-decoration: none;
+    background-color: #930077;
+    color: #fff;
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 50%; }
+  footer .footerCopyright {
+    margin-top: 50px; }
+    footer .footerCopyright p {
+      color: #6c757d;
+      font-family: Montserrat;
+      font-size: 15px; }
+      footer .footerCopyright p i {
+        color: red; }
+
+@media screen and (max-width: 1050px) {
+  .sectionAbout div {
+    background-position: center; }
+
+  .sectionProducts .sectionProductsDiv2 > div {
+    min-width: 300px;
+    min-height: 300px; } }
+@media screen and (max-width: 973px) {
+  .sectionAbout h1:nth-child(2) {
+    font-size: 80px !important; }
+
+  .sectionWelcome .sectionWelcomeDiv1 h1:nth-child(2) {
+    font-size: 80px; }
+
+  .sectionProducts .sectionProductsDiv2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px; }
+    .sectionProducts .sectionProductsDiv2 > div {
+      margin-top: 150px;
+      margin-right: 0;
+      min-width: 600px;
+      min-height: 600px;
+      width: 600px;
+      height: 600px; }
+      .sectionProducts .sectionProductsDiv2 > div .sectionProductsDiv2ImgDiv {
+        bottom: 113px; }
+
+  .sectionBlog .sectionBlogDiv2 {
+    flex-wrap: wrap;
+    margin-top: 60px; }
+    .sectionBlog .sectionBlogDiv2 > div {
+      margin-top: 30px; }
+      .sectionBlog .sectionBlogDiv2 > div .sectionBlogDiv2ImgDiv {
+        height: 400px;
+        width: 600px; } }
+@media screen and (max-width: 630px) {
+  .sectionAbout h1:nth-child(2) {
+    font-size: 50px !important; }
+
+  .sectionWelcome .sectionWelcomeDiv1 h1:nth-child(2) {
+    font-size: 50px; }
+
+  .sectionProducts .sectionProductsDiv1 p {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center; }
+  .sectionProducts .sectionProductsDiv2 > div {
+    min-width: 300px;
+    min-height: 300px;
+    width: 300px;
+    height: 300px; }
+    .sectionProducts .sectionProductsDiv2 > div .sectionProductsDiv2ImgDiv {
+      bottom: 56px; }
+
+  .sectionWelcomeDiv2 div p {
+    font-size: 16px !important; }
+  .sectionWelcomeDiv2 div h1 {
+    font-size: 15px !important; }
+
+  .sectionBlog .sectionBlogDiv1 p {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center; }
+  .sectionBlog .sectionBlogDiv2 > div .sectionBlogDiv2ImgDiv {
+    height: 150px;
+    width: 350px; }
+
+  .footerCopyright p span {
+    display: block; } }
+@media screen and (max-width: 480px) {
+  header nav {
+    display: none; }
+  header .headerMenuIcon {
+    display: block;
+    text-align: center;
+    margin-top: 10px; }
+    header .headerMenuIcon i {
+      color: #930077;
+      font-size: 40px; }
+
+  .sectionWelcomeDiv2 {
+    display: block !important; }
+    .sectionWelcomeDiv2 div {
+      margin: 50px 0; }
+      .sectionWelcomeDiv2 div p {
+        margin-top: 20px !important; }
+    .sectionWelcomeDiv2 div:last-of-type {
+      margin: 0; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,282 @@
+$size-zero: 0px;
+$size-main: 10px;
+$size-width: 100%;
+$color-purple: #930077;
+$color-white: #fff;
+$color-gray: #f8f9fa;
+$color-darkgray: #6c757d;
+$color-black: #000;
+$font-main: Cinzel;
+$font-second: Montserrat;
+$font-type: sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: $size-main*110;
+  margin: 0 auto;
+}
+
+header {
+  .headerMenuIcon {
+    display: none;
+  }
+
+  padding-top: $size-main*3;
+  padding-bottom: $size-main*2;
+  border-bottom: 1px solid lighten($color-darkgray, 40%);
+
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: $size-main*4;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-right: $size-main*3;
+
+      a {
+        text-decoration: none;
+        color: $color-darkgray;
+        font-family: $font-main;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $color-purple;
+        }
+      }
+    }
+  }
+}
+
+
+@import "section-about";
+@import "section-products";
+@import "section-welcome";
+@import "section-blog";
+
+footer {
+  padding: $size-main*5;
+  text-align: center;
+
+  .footerIconsDiv {
+    a {
+      text-decoration: none;
+      background-color: $color-purple;
+      color: $color-white;
+      padding: $size-main*1.5;
+      margin-right: $size-main;
+      border-radius: 50%;
+    }
+  }
+
+  .footerCopyright {
+    margin-top: $size-main*5;
+
+    p {
+      color: $color-darkgray;
+      font-family: $font-second;
+      font-size: $size-main*1.5;
+
+      i {
+        color: red;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1050px) {
+  .sectionAbout {
+    div {
+      background-position: center;
+    }
+  }
+  .sectionProducts {
+    .sectionProductsDiv2 {
+      > div {
+        min-width: $size-main*30;
+        min-height: $size-main*30;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 973px) {
+  .sectionAbout {
+    h1:nth-child(2) {
+      font-size: $size-main*8 !important;
+    }
+  }
+  .sectionWelcome {
+    .sectionWelcomeDiv1 {
+      h1:nth-child(2) {
+        font-size: $size-main*8;
+
+      }
+    }
+  }
+  .sectionProducts {
+    .sectionProductsDiv2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: $size-main*6;
+
+      > div {
+        margin-top: $size-main*15;
+        margin-right: 0;
+        min-width: $size-main*60;
+        min-height: $size-main*60;
+        width: $size-main*60;
+        height: $size-main*60;
+
+        .sectionProductsDiv2ImgDiv {
+          bottom: 113px;
+
+        }
+      }
+    }
+  }
+  .sectionBlog {
+    .sectionBlogDiv2 {
+      flex-wrap: wrap;
+      margin-top: $size-main*6;
+
+      > div {
+        margin-top: $size-main*3;
+
+        .sectionBlogDiv2ImgDiv {
+          height: 400px;
+          width: 600px;
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .sectionAbout {
+    h1:nth-child(2) {
+      font-size: $size-main*5 !important;
+    }
+  }
+  .sectionWelcome {
+    .sectionWelcomeDiv1 {
+      h1:nth-child(2) {
+        font-size: $size-main*5;
+
+      }
+    }
+  }
+
+  .sectionProducts {
+    .sectionProductsDiv1 {
+      p {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+      }
+
+    }
+
+    .sectionProductsDiv2 {
+      > div {
+        min-width: $size-main*30;
+        min-height: $size-main*30;
+        width: $size-main*30;
+        height: $size-main*30;
+
+
+        .sectionProductsDiv2ImgDiv {
+          bottom: 56px;
+        }
+      }
+    }
+  }
+  .sectionWelcomeDiv2 {
+    div {
+      p {
+        font-size: $size-main*1.6 !important;
+      }
+
+      h1 {
+        font-size: $size-main*1.5 !important;
+
+      }
+    }
+  }
+  .sectionBlog {
+    .sectionBlogDiv1 {
+      p {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+      }
+    }
+
+    .sectionBlogDiv2 {
+      > div {
+        .sectionBlogDiv2ImgDiv {
+          height: 150px;
+          width: 350px;
+
+        }
+      }
+    }
+  }
+  .footerCopyright {
+    p span {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    nav {
+      display: none;
+    }
+
+    .headerMenuIcon {
+      display: block;
+      text-align: center;
+      margin-top: $size-main;
+
+      i {
+        color: $color-purple;
+        font-size: $size-main*4;
+
+      }
+    }
+  }
+
+  .sectionWelcomeDiv2 {
+    display: block !important;
+
+    div {
+      margin: $size-main*5 0;
+
+      p {
+        margin-top: $size-main*2 !important;
+      }
+    }
+
+    div:last-of-type {
+      margin: 0;
+    }
+  }
+}
+
+
+
