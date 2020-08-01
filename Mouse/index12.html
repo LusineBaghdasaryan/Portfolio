@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #mouse {
+            position: relative;
+            display: inline-block;
+            margin: 0;
+            font-weight: 900;
+            font-size: 18px;
+            transition: all 1s;
+        }
+
+
+    </style>
+</head>
+<body style="overflow: hidden">
+
+
+<pre id="mouse" tabindex="1">
+ _   _
+(q\_/p)
+ /. .\
+=\_t_/=   __
+ /   \   (
+((   ))   )
+/\) (/\  /
+\  Y  /-'
+ nn^nn
+</pre>
+
+
+<script>
+    let mouse = document.querySelector('pre');
+    mouse.style.left = '0';
+    mouse.style.top = '0';
+
+    function getColor() {
+        return parseInt(Math.random() * 255);
+    }
+
+    document.addEventListener('keydown', (event) => {
+        mouse.style.color = `rgb(${getColor()},${getColor()},${getColor()})`;
+        let cords = mouse.getBoundingClientRect();
+        if (event.code === 'ArrowRight') {
+            let left = mouse.style.left;
+            mouse.style.left = `${parseInt(left) + 50}px`;
+            if (parseInt(mouse.style.left) >= document.body.offsetWidth) {
+                mouse.style.left = -cords.width + 'px';
+            }
+        }
+        else if (event.code === 'ArrowLeft') {
+            mouse.style.left = `${cords.left - 50}px`;
+            if (parseInt(mouse.style.left) + cords.height <= 0) {
+                mouse.style.left = document.body.offsetWidth + 'px';
+            }
+        }
+        else if (event.code === 'ArrowDown') {
+            let top = mouse.style.top;
+            mouse.style.top = `${parseInt(top) + 50}px`;
+
+            if (parseInt(mouse.style.top) >= window.innerHeight) {
+                mouse.style.top = -cords.height + 'px';
+            }
+
+        }
+        else if (event.code === 'ArrowUp') {
+            mouse.style.top = `${cords.top - 50}px`;
+            if (parseInt(mouse.style.top) + cords.height <= 0) {
+                mouse.style.top = window.innerHeight + 'px';
+            }
+        }
+    });
+
+
+</script>
+</body>
+</html>
