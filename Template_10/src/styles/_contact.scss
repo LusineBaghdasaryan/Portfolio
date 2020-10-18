@@ -1,0 +1,29 @@
+.contact {
+  padding: 80px 0;
+
+  h2 {
+    font-size: 23px;
+    color: $colorBlack;
+    font-family: $fontPoppins;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-family: $fontLato;
+    color: $colorBlack;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .getInTouch {
+    > div {
+      margin-bottom: 40px;
+      padding-left: 20px;
+      border-left: 5px solid $colorGreen;
+    }
+  }
+
+
+}

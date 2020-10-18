@@ -1,0 +1,66 @@
+.team {
+  padding: 80px 0;
+  background-color: #EFF1F7;
+  .teamDiv {
+    padding: 200px 0;
+    background: $colorWhite;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+
+    .teamMember {
+      position: absolute;
+      top: -20px;
+      transition: all .5s;
+
+      img {
+        width: 100%;
+      }
+
+      h1 {
+        font-family: $fontPoppins;
+        color: $colorGreen;
+        font-size: 20px;
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      p {
+        font-family: $fontPoppins;
+        color: $colorDarkGrey;
+        font-size: 15px;
+        text-transform: capitalize;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 1px solid lighten($colorLightGrey, 30%);
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+
+        i {
+          color: lighten($colorDarkGrey, 20%);
+          font-size: 20px;
+          margin-right: 10px;
+
+
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.19);
+      cursor: pointer;
+    }
+
+    &:hover .teamMember {
+      transform: translateY(20px);
+    }
+  }
+}
+
+
+

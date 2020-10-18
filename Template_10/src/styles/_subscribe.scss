@@ -1,0 +1,24 @@
+.subscribe {
+  background-image: url("../images/subscribe.jpg");
+  padding: 80px;
+  background-position: center;
+  background-attachment: fixed;
+  h1{
+    white-space: nowrap;
+    font-size: 36px;
+    font-family: $fontPoppins;
+    color: $colorWhite;
+  }
+  .subscribeEmail{
+    background-color: transparent;
+    &::placeholder{
+      color: $colorWhite;
+    }
+    border: 1px solid $colorWhite;;
+    outline: none;
+    padding: 0 80px;
+
+  }
+}
+
+

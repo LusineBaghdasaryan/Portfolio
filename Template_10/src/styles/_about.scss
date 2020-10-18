@@ -1,0 +1,47 @@
+.about {
+  padding: 80px 0;
+
+  img {
+    width: 100%;
+  }
+
+  .aboutText {
+    font-size: 14px;
+    color: $colorBlack;
+    margin-bottom: 30px;
+    font-family: $fontPoppins;
+    text-align: center;
+
+  }
+}
+
+.statistic {
+  padding: 80px;
+  background-image: url("../images/statistic.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+
+  h1 {
+    font-size: 45px;
+    color: $colorWhite;
+    font-family: $fontPoppins;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    color: $colorWhite;
+    font-family: $fontPoppins;
+    text-align: center;
+  }
+
+  .line:after {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+    background: $colorGreen;
+    margin-bottom: 10px;
+  }
+}

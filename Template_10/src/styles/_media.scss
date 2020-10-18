@@ -1,0 +1,329 @@
+@media only screen and (max-width: 1210px) {
+  header {
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 14px;
+            margin-right: 25px;
+
+          }
+        }
+      }
+
+    }
+  }
+
+  .greenButton {
+    font-size: 13px;
+    padding: 8px 20px;
+
+  }
+  .blockHeaders {
+    font-size: 45px;
+  }
+
+
+  .home {
+    h1 {
+      font-size: 40px;
+
+    }
+
+    p {
+      font-size: 18px;
+
+    }
+  }
+  .portfolio {
+    > div {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-around;
+
+      > div {
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 250px;
+        margin-bottom: 20px;
+
+      }
+
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 995px) {
+
+
+  header {
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 13px;
+            margin-right: 20px;
+
+          }
+        }
+      }
+
+    }
+  }
+
+  .blockHeaders {
+    font-size: 37px;
+  }
+
+
+  .home {
+    h1 {
+      font-size: 35px;
+
+    }
+
+    p {
+      font-size: 17px;
+
+    }
+  }
+
+  .about {
+
+    .aboutText {
+      font-size: 13px;
+      margin-bottom: 10px;
+
+    }
+
+
+  }
+
+
+  .portfolio {
+    > div {
+
+      > div {
+        width: 600px;
+        height: 250px;
+        margin-bottom: 20px;
+
+      }
+
+    }
+  }
+
+  .servicesConsultation {
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .subscribe {
+    h1 {
+      font-size: 25px;
+    }
+
+    .subscribeEmail {
+      padding: 0 30px;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 770px) {
+
+  .greenButton {
+    font-size: 11px;
+    padding: 6px 14px;
+
+  }
+
+  .blockHeaders {
+    font-size: 35px;
+  }
+
+  .home {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 25px;
+
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+
+    }
+  }
+  .blog {
+    .blogDiv {
+
+      h1 {
+        font-size: 18px;
+
+      }
+
+      p {
+        font-size: 13px;
+
+      }
+
+    }
+  }
+
+
+  .servicesConsultation {
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .subscribe {
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+
+  }
+
+  .contact {
+    padding: 80px 0;
+    .contactForm {
+      margin-top: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 12px;
+    }
+
+
+
+
+  }
+
+  .teamDiv {
+    margin-bottom: 50px;
+  }
+
+  .statistic {
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .line:after {
+      content: '';
+      display: inline-block;
+      width: 80px;
+      height: 2px;
+      background: $colorGreen;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .greenButton {
+    font-size: 10px;
+
+  }
+  .blockHeaders {
+    font-size: 30px;
+  }
+  .blog {
+    .blogDiv {
+
+      h1 {
+        font-size: 16px;
+
+      }
+
+      p {
+        font-size: 12px;
+
+      }
+
+    }
+  }
+
+
+  .servicesConsultation {
+    > div {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+  .subscribe {
+    > div {
+
+      h1 {
+        font-size: 20px;
+      }
+
+    }
+
+  }
+  .statistic {
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+  .home {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+
+    }
+
+    p {
+      display: none;
+
+    }
+  }
+  footer {
+    padding: 13px;
+
+    p {
+      font-size: 13px;
+    }
+
+  }
+
+}
